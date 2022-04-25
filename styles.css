@@ -1,0 +1,212 @@
+body {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+/* Header */
+.header .navbar .navbar-brand {
+    color: #044B8F;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+.header .navbar .navbar-collapse {
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.header .navbar .navbar-collapse .navbar-nav .nav-item {
+    font-weight: bolder;
+}
+
+.header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+    color: #044B8F !important;
+}
+
+.header .bg-light {
+    background-color: white !important;
+}
+
+@media only screen and (max-width: 992px) {
+
+    /* For mobile phones: */
+    .header .navbar .navbar-brand {
+        font-size: x-large;
+    }
+}
+
+/* /Header */
+
+/* Banner */
+.banner {
+    width: 100%;
+    aspect-ratio: 16/6;
+    background: url('./images/banner.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    color: white;
+
+    padding-top: 78px;
+
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.banner .banner-content {
+    position: relative;
+    /* max-width: 60%; */
+}
+
+.banner .banner-content .small-hr {
+    width: 20%;
+    height: 2px;
+}
+
+.banner .banner-content .banner-btn {
+    background-color: #FB6D3D;
+    color: white;
+}
+
+@media only screen and (max-width: 992px) {
+
+    /* For mobile phones: */
+    .banner {
+        aspect-ratio: 16/14;
+        background: url('./images/banner_mobile.jpg') no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    .banner .banner-content .small-hr {
+        width: 30%;
+    }
+}
+
+/* /Banner */
+
+/* welcome */
+.welcome .welcome-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* /welcome */
+
+/* About */
+.about {
+    padding-top: 88px;
+    padding-bottom: 50px;
+    background-color: #044B8F;
+    color: white;
+}
+
+.about .avatar {
+    border-radius: 50%;
+}
+
+/* /About */
+
+/* Services */
+.services {
+    padding-top: 88px;
+    padding-bottom: 50px;
+}
+
+.services .service {
+    padding: 30px;
+}
+
+.services .service .service-card {
+    box-shadow: 0px 4px 26px 19px rgba(4, 75, 143, 0.1);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.services .service .service-card .title {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.services .service .service-card .title .title-text {
+    color: #044B8F;
+    font-weight: bold;
+}
+
+.services .service .service-card .title .icon {
+    width: 25%;
+    text-align: center;
+}
+
+.services .service .service-card .service-text {
+    height: 100px;
+    overflow: hidden;
+}
+
+.services .service .service-card .learn-more {
+    color: #044B8F;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.services .service .service-card .service-text p {
+    text-overflow: ellipsis;
+}
+/* /Services */
+
+/* contact */
+.contact {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #044B8F;
+    color: white;
+}
+
+.contact a {
+    text-decoration: none;
+    color: white;
+}
+
+.contact .get-in-touch {
+    background-color: white;
+    color: #044B8F;
+}
+
+.contact .copyright-text {
+    width: 100%;
+    text-align: center;
+}
+/* /contact */
+
+/* service modal */
+.service-modal #serviceModalTitle {
+    color: #044B8F;
+    font-weight: bold;
+}
+
+.service-modal .modal-body {
+    padding: 20px;
+}
+
+.service-modal .modal-footer {
+    justify-content: space-evenly;
+}
+/* /service modal */
