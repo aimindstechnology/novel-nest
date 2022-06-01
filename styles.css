@@ -3,6 +3,11 @@ body {
 }
 
 /* Header */
+.header .navbar {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
 .header .navbar .navbar-brand {
     color: #044B8F;
     font-weight: bolder;
@@ -37,10 +42,12 @@ body {
 /* /Header */
 
 /* Banner */
+
+
 .banner {
     width: 100%;
     aspect-ratio: 16/6;
-    background: url('./images/banner.jpg') no-repeat center center fixed;
+    /* background: url('./images/banner.jpg') no-repeat center center fixed; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -57,14 +64,22 @@ body {
 
 }
 
+.banner #banner-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+
 .banner::before {
     content: "";
     position: absolute;
     top: 0px;
     right: 0px;
-    bottom: 0px;
+    bottom: -40px;
     left: 0px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .banner .banner-content {
@@ -120,6 +135,7 @@ body {
 
 .about .avatar {
     border-radius: 50%;
+    height: 225px;
 }
 
 /* /About */
@@ -172,6 +188,16 @@ body {
 }
 /* /Services */
 
+/* Career */
+.career {
+    padding-top: 88px;
+    padding-bottom: 50px;
+    /* background-color: #044B8F; */
+    background: url('./images/career.jpg') no-repeat center center;
+    color: white;
+}
+/* Career */
+
 /* contact */
 .contact {
     padding-top: 50px;
@@ -210,3 +236,30 @@ body {
     justify-content: space-evenly;
 }
 /* /service modal */
+
+
+/* Service Page container */
+.service-page-container {
+    margin-top: "10px";
+}
+
+.service-page-container .infrastructure-service {
+    background: url('./images/infrastructure.jpg') no-repeat center center;
+    margin-top: 70px;
+    height: 200px;
+    position: relative;
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.service-page-container .infrastructure-service::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+/* Service Page container */
