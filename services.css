@@ -1,0 +1,35 @@
+.services {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.services .services-banner {
+    width: 100%;
+    aspect-ratio: 18/3;
+    background-image: url('./images/services-banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    margin-bottom: 25px;
+}
+
+.services .services-banner .services-content {
+    height: 100%;
+    width: 100;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.services .services-banner .services-content h1 {
+    display: inline-block;
+    border-bottom: 4px solid white;
+}
+
+.services .service {
+    /* margin-bottom: 25px; */
+    padding-top: 90px;
+}

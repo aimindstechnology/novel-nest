@@ -101,8 +101,7 @@ body {
 
     /* For mobile phones: */
     .banner {
-        aspect-ratio: 16/14;
-        background: url('./images/banner_mobile.jpg') no-repeat center center;
+        aspect-ratio: 3/4;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -134,8 +133,7 @@ body {
 }
 
 .about .avatar {
-    border-radius: 50%;
-    height: 225px;
+    border-radius: 8px;
 }
 
 /* /About */
@@ -146,45 +144,10 @@ body {
     padding-bottom: 50px;
 }
 
-.services .service {
-    padding: 30px;
-}
-
-.services .service .service-card {
-    box-shadow: 0px 4px 26px 19px rgba(4, 75, 143, 0.1);
-    border-radius: 10px;
-    padding: 25px;
-}
-
-.services .service .service-card .title {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.services .service .service-card .title .title-text {
-    color: #044B8F;
-    font-weight: bold;
-}
-
-.services .service .service-card .title .icon {
-    width: 25%;
-    text-align: center;
-}
-
-.services .service .service-card .service-text {
-    height: 100px;
-    overflow: hidden;
-}
-
-.services .service .service-card .learn-more {
-    color: #044B8F;
+.services .service-container a {
+    cursor: pointer;
     text-decoration: none;
-    font-weight: bold;
-}
-
-.services .service .service-card .service-text p {
-    text-overflow: ellipsis;
+    color: black;
 }
 /* /Services */
 
@@ -195,6 +158,7 @@ body {
     /* background-color: #044B8F; */
     background: url('./images/career.jpg') no-repeat center center;
     color: white;
+    margin-bottom: 25px;
 }
 /* Career */
 
@@ -221,45 +185,3 @@ body {
     text-align: center;
 }
 /* /contact */
-
-/* service modal */
-.service-modal #serviceModalTitle {
-    color: #044B8F;
-    font-weight: bold;
-}
-
-.service-modal .modal-body {
-    padding: 20px;
-}
-
-.service-modal .modal-footer {
-    justify-content: space-evenly;
-}
-/* /service modal */
-
-
-/* Service Page container */
-.service-page-container {
-    margin-top: "10px";
-}
-
-.service-page-container .infrastructure-service {
-    background: url('./images/infrastructure.jpg') no-repeat center center;
-    margin-top: 70px;
-    height: 200px;
-    position: relative;
-    color: #000;
-    font-size: 20px;
-    font-weight: 600;
-}
-
-.service-page-container .infrastructure-service::before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    background-color: rgba(0, 0, 0, 0.3);
-}
-/* Service Page container */
